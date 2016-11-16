@@ -1,15 +1,17 @@
 // Task 1: Create a function that randomly chooses among 'rock', 'paper', or 'scissors'.
+
 var generateComputerChoice = function () {
+    
     // Task 1, Step 1: Create an array with three elements ("rock", "paper" and "scissors").
-        
+        var choices = ["rock", "paper", "scissors"];
     // Task 1, Step 2: Use the JavaScript Math function to generate a random whole
     // number between 0 and 2. Be sure to save it to a variable.
-        
+       var randNum = Math.round( Math.random() * 2);
     // Task 1, Step 3: Use this randomly generated number to pull a value from the
     // array (eg myArray[randomNum])
-        
+        var comChoices = choices[randNum];
     // Task 1, Step 4: return this new value
-        
+        return comChoices;
 };
 
 // Task 2: Create a function that compares the userChoice and the computerChoice
